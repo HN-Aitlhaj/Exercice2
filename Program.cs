@@ -6,7 +6,9 @@ namespace Exercice2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Veuillez saisir la taille du tableau");
+            string number = Console.ReadLine();
+            int taille = Convert.ToInt32(number);
         }
     }
 }
