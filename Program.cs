@@ -30,14 +30,14 @@ namespace Exercice2
             }
             Array.Resize(ref Tab, Tab.Length + 1);
 
-            Console.Write("\n\n Veuillez saisir la valeur à insérer: ");
+            Console.Write("\n Veuillez saisir la valeur à insérer: ");
             int num = Convert.ToInt32(Console.ReadLine());
             Tab[j] = num;
 
             for (int i = 0; i < Tab.Length; i++)
             {
                 Array.Sort(Tab);
-                Console.Write("\t {1} |", (i + 1), Tab[i]);
+                Console.Write("\Tab {1} |", (i + 1), Tab[i]);
 
             }
         }
