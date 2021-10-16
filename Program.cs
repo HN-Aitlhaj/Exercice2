@@ -19,13 +19,13 @@ namespace Exercice2
                 Console.Write("l'element N° {0} :  ",i+1);
                 Tab[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Array.Sort(Tab);
 
             Console.WriteLine("triage du tableau");
-            int j;
+            Array.Sort(Tab);
+            int j = 0;
             for (int i = 0; i < taille; i++)
             {
-                Console.Write(" "+Tab[i]+" ");
+                Console.Write("\t"+Tab[i]+" ");
                 j = i;
             }
             Array.Resize(ref Tab, Tab.Length + 1);
